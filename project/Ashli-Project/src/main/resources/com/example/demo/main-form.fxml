@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0f0a54" height="80.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Label layoutX="238.0" layoutY="5.0" prefHeight="66.0" prefWidth="147.0" text=" Cashiers " textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#0f0a54" height="244.0" layoutX="113.0" layoutY="97.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+      <GridPane layoutX="152.0" layoutY="157.0" prefHeight="162.0" prefWidth="300.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="q1p1" alignment="CENTER" onMousePressed="#q1p1OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q2p1" alignment="CENTER" onMousePressed="#q2p1OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q3p1" alignment="CENTER" onMousePressed="#q3p1OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q1p2" alignment="CENTER" onMousePressed="#q1p2OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q2p2" alignment="CENTER" onMousePressed="#q2p2OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q2p3" alignment="CENTER" onMousePressed="#q2p3OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q3p2" alignment="CENTER" onMousePressed="#q3p2OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q3p3" alignment="CENTER" onMousePressed="#q3p3OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q3p4" alignment="CENTER" onMousePressed="#q3p4OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="q3p5" alignment="CENTER" onMousePressed="#q3p5OnAction" prefHeight="18.0" prefWidth="110.0" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button layoutX="24.0" layoutY="358.0" mnemonicParsing="false" onAction="#currentCustomer" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #2980b9;" styleClass="edge-button" stylesheets="@css/Butten.css" text="Current Customers" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="455.0" layoutY="358.0" mnemonicParsing="false" onAction="#waitingCustomer" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #2980b9;" styleClass="edge-button" stylesheets="@css/Butten.css" text="Waiting Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="148.0" layoutX="302.0" layoutY="134.0" startX="-154.0" stroke="WHITE" />
+      <Label alignment="CENTER" layoutX="144.0" layoutY="110.0" prefHeight="18.0" prefWidth="110.0" text="Q1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="244.0" layoutY="110.0" prefHeight="18.0" prefWidth="110.0" text="Q2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="347.0" layoutY="110.0" prefHeight="18.0" prefWidth="110.0" text="Q3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="207.0" mnemonicParsing="false" onAction="#relodeOnAction" text="relode" />
+   </children>
+</AnchorPane>

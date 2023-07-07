@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000754" height="70.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+      <Label alignment="CENTER" layoutX="172.0" layoutY="16.0" prefHeight="39.0" prefWidth="264.0" text="Waiting Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView layoutX="98.0" layoutY="100.0" prefHeight="231.0" prefWidth="412.0" stylesheets="@css/Table1.css">
+        <columns>
+          <TableColumn prefWidth="139.0" text="First Name" />
+          <TableColumn prefWidth="145.0" text="Last Name" />
+            <TableColumn prefWidth="127.0" text="Burger Count" />
+        </columns>
+      </TableView>
+      <Button layoutX="475.0" layoutY="354.0" mnemonicParsing="false" text="Back to Home Page" />
+   </children>
+</AnchorPane>
